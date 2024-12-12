@@ -14,13 +14,6 @@ help(palmerpenguins)
 # read citation
 citation("palmerpenguins")
 
-# print citation in text style
-print(citation("palmerpenguins"), style = "text")
-Horst AM, Hill AP, Gorman KB (2020). _palmerpenguins: Palmer
-Archipelago (Antarctica) penguin data_. doi:10.5281/zenodo.3960218
-<https://doi.org/10.5281/zenodo.3960218>, R package version 0.1.0,
-<https://allisonhorst.github.io/palmerpenguins/>.
-
 # load up the path to the data file
 path_to_file("penguins_raw.csv")
 [1] "/usr/lib/R/site-library/palmerpenguins/extdata/penguins_raw.csv"
@@ -106,9 +99,9 @@ knitr::spin(hair = "Readme.r",
 ```
 
 ```
-## Error in parse(text = input): <text>:16:7: unexpected symbol
-## 15: print(citation("palmerpenguins"), style = "text")
-## 16: Horst AM
-##           ^
+## Error in parse(text = input): <text>:16:1: unexpected '['
+## 15: path_to_file("penguins_raw.csv")
+## 16: [
+##     ^
 ```
 
