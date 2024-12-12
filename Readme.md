@@ -16,7 +16,7 @@ citation("palmerpenguins")
 
 # load up the path to the data file
 path_to_file("penguins_raw.csv")
-[1] "/usr/lib/R/site-library/palmerpenguins/extdata/penguins_raw.csv"
+# 1 "/usr/lib/R/site-library/palmerpenguins/extdata/penguins_raw.csv"
 
 # look at the first 6 rows of dataframe
 head(read.csv(path_to_file("penguins.csv")))
@@ -99,9 +99,9 @@ knitr::spin(hair = "Readme.r",
 ```
 
 ```
-## Error in parse(text = input): <text>:16:1: unexpected '['
-## 15: path_to_file("penguins_raw.csv")
-## 16: [
-##     ^
+## Error in parse(text = input): <text>:20:14: unexpected symbol
+## 19: head(read.csv(path_to_file("penguins.csv")))
+## 20:   species    island
+##                  ^
 ```
 

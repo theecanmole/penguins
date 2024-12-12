@@ -13,7 +13,7 @@ citation("palmerpenguins")
 
 # load up the path to the data file
 path_to_file("penguins_raw.csv")
-[1] "/usr/lib/R/site-library/palmerpenguins/extdata/penguins_raw.csv"
+# 1 "/usr/lib/R/site-library/palmerpenguins/extdata/penguins_raw.csv"
 
 # look at the first 6 rows of dataframe
 head(read.csv(path_to_file("penguins.csv")))
