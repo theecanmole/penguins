@@ -1,9 +1,7 @@
-
-
-``` r
 ## Pie charts and bar charts for the Palmer Penguin data set in Base R
 
 # inspired by Equitable Equations https://www.youtube.com/watch?v=ueLozxgEnDc&t=72s
+``` r
 
 # load package
 library(palmerpenguins)
