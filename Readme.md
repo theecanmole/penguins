@@ -4,7 +4,6 @@
 ## Pie charts and bar charts for the Palmer Penguin data set in Base R
 
 Inspired by Equitable Equations https://www.youtube.com/watch?v=ueLozxgEnDc&t=72s
-
 ``` r
 # load package
 library(palmerpenguins)
@@ -37,10 +36,13 @@ pen_sum <- as.numeric(table(penguins[["species"]]))
 # assign some labels for species counts
 labels <- names(table(penguins[["species"]]))
 labels <- paste(labels, pen_sum)
-
+```
+``` r
 # print pen_sum
 pen_sum
 # [1] 152  68 124
+```
+``` r
 # print labels
 labels
 # [1] "Adelie 152"   "Chinstrap 68" "Gentoo 124"
@@ -62,7 +64,6 @@ mtext(side=1,cex=1,line=3,"Palmer Penguins https://allisonhorst.github.io/palmer
 dev.off()
 ```
 ![](barplot-720by540.svg)
-
 ``` r
 # create .svg format pie chart
 svg(filename="piechart-720by540.svg", width = 8, height = 8, pointsize = 14, onefile = FALSE, family = "sans", bg = "white", antialias = c("default", "none", "gray", "subpixel"))
@@ -71,11 +72,5 @@ dev.off()
 ```
 ![](piechart-720by540.svg)
 
-
-```
-## Error in parse(text = input): <text>:56:2: unexpected '['
-## 55: dev.off()
-## 56: ![
-##      ^
 
 
