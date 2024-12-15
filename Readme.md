@@ -47,11 +47,11 @@ pen_sum
 labels
 # [1] "Adelie 152"   "Chinstrap 68" "Gentoo 124"
 ```
-``` {r, include = FALSE}
+``` {r, echo = TRUE}
 # Here is my Base R pie chart script
 pie(pen_sum,radius=0.99,init.angle =90, col = brewer.pal(3,"Dark2"), labels=labels, main = expression(paste("Palmer Penguins pie chart")), sub =expression(paste("https://allisonhorst.github.io/palmerpenguins/")))
 ```
-``` r{r, include = FALSE}
+``` r{r, echo = TRUE}
 # Here is my Base R barplot script
 barplot(pen_sum,las =1, names=labels,col = brewer.pal(3,"Dark2"),main = expression(paste("Palmer Penguins bar chart"))) +
 mtext(side=1,cex=1,line=3,"Palmer Penguins https://allisonhorst.github.io/palmerpenguins/")
