@@ -1,3 +1,5 @@
+
+```{r}
 ## Pie charts and bar charts for the Palmer Penguin data set in Base R
 
 # Inspired by Equitable Equations https://www.youtube.com/watch?v=ueLozxgEnDc&t=72s
@@ -76,33 +78,6 @@ svg(filename="piechart-720by540.svg", width = 8, height = 8, pointsize = 14, one
 pie(pen_sum,radius=0.99,init.angle =90, col = brewer.pal(3,"Dark2"), labels=labels, main = expression(paste("Palmer Penguins pie chart")), sub =expression(paste("https://allisonhorst.github.io/palmerpenguins/")))
 dev.off()
 ![](piechart-720by540.svg)
+```
 
-# And here is my Base R barplot script
-barplot(c(152, 68,  124),las =1, names=c("Adelie","Chinstrap","Gentoo"), col=c("#1B9E77", "#D95F02", "#7570B3"),main = expression(paste("Palmer Penguins bar chart"))) +
-mtext(side=1,cex=1,line=3,"Palmer Penguins https://allisonhorst.github.io/palmerpenguins/")
-
-sessionInfo()
-R version 4.2.2 Patched (2022-11-10 r83330)
-Platform: x86_64-pc-linux-gnu (64-bit)
-Running under: Debian GNU/Linux 12 (bookworm)
-
-Matrix products: default
-BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.11.0
-LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.11.0
-
-locale:
- [1] LC_CTYPE=en_NZ.UTF-8          LC_NUMERIC=C
- [3] LC_TIME=en_NZ.UTF-8           LC_COLLATE=en_NZ.UTF-8
- [5] LC_MONETARY=en_NZ.UTF-8       LC_MESSAGES=en_NZ.UTF-8
- [7] LC_PAPER=en_NZ.UTF-8          LC_NAME=en_NZ.UTF-8
- [9] LC_ADDRESS=en_NZ.UTF-8        LC_TELEPHONE=en_NZ.UTF-8
-[11] LC_MEASUREMENT=en_NZ.UTF-8    LC_IDENTIFICATION=en_NZ.UTF-8
-
-attached base packages:
-[1] stats     graphics  grDevices utils     datasets  methods   base
-
-other attached packages:
-[1] rkward_0.7.5
-
-loaded via a namespace (and not attached):
-[1] compiler_4.2.2 tools_4.2.2
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/theecanmole/penguins">Pie charts and bar charts for the Palmer Penguin data set in Base R</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/theecanmole">Theecanmole</a> is marked with <a href="https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1" alt=""></a></p> 
