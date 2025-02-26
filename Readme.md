@@ -60,7 +60,7 @@ mtext(side=1,cex=1,line=3,"Palmer Penguins https://allisonhorst.github.io/palmer
 dev.off()
 ```
 ![](barplot-720by540.svg)
-```
+
 ```{r}
 # Here is my Base R stacked barplot script
 p<- c(152, 68,  124)
@@ -79,7 +79,6 @@ mtext(side=1,cex=1,line=1,"Palmer Penguins https://allisonhorst.github.io/palmer
 dev.off()
 ```
 ![](barplotstacked-720by540.svg)
-
 ```{r}
 # create .svg format pie chart
 svg(filename="piechart-720by540.svg", width = 8, height = 8, pointsize = 14, onefile = FALSE, family = "sans", bg = "white", antialias = c("default", "none", "gray", "subpixel"))
